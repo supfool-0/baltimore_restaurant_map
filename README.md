@@ -21,7 +21,7 @@ human_address: "{"address": "1801 NORTH AVE", "city": "Baltimore", "state": "MD"
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+[Wireframe Concept](https://wireframe.cc/pro/pp/1a29ea99d392747)
 
 ### MVP/PostMVP
 
