@@ -2,7 +2,7 @@
 
 ## Baltimore Restaurant Map
 
-This project maps all the restaurant locations in Baltimore. Restaurant address locations are obtained from the [Baltimore Open Data API](https://data.baltimorecity.gov/Culture-Arts/Restaurants/k5ry-ef3g). These addresses will need to be geocoded with [Geocodio](https://www.geocod.io/) to latitude and longitude coordinates, then mapped out using [Mapbox](https://www.mapbox.com/). This dataset has roughy 1,000 data points.
+This project maps all the restaurant locations in Baltimore and allows the user the capability to search restaurants by neighboorhood. Restaurant address locations are obtained from the [Baltimore Open Data API](https://data.baltimorecity.gov/Culture-Arts/Restaurants/k5ry-ef3g). These addresses will need to be geocoded with [Geocodio](https://www.geocod.io/) to latitude and longitude coordinates, then mapped out using [Mapbox](https://www.mapbox.com/). This dataset has roughy 1,000 data points.
 
 ## API and Data Sample
 
@@ -21,24 +21,19 @@ human_address: "{"address": "1801 NORTH AVE", "city": "Baltimore", "state": "MD"
 
 ## Wireframes
 
-[Wireframe Concept](https://wireframe.cc/pro/pp/1a29ea99d392747)
-
-### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+[Baltimore Restaurant Website Wireframe Concept](https://wireframe.cc/pro/pp/1a29ea99d392747)
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
-
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+- Create a dropdown menu pulling from the Baltimore Open Data api that allows the user to select a neighboorhood
+- Initially render page with all restaurants on display in MapBox
+	- This will include the use of geocodio to get coordinates
+- Upon selection of neighboorhood render a new map with restaurants only in that neighboorhood
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
-
-- Add second API
-- Use local storage to save user favorites
+- Add a button that takes user to another page 'Your restaurant?'
+- New page allows user to add information about their restaurant. (picture, url to website...)
+- Data is saved in local storage
+- New data is rendered when restaurant is selected on map on home page
 
 ## Project Schedule
 
