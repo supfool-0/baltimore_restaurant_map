@@ -3,6 +3,15 @@ const geocodeioAPIkey = `f4b4fc94749253fffff5fc9a54b44ab7a7cf777`;
 const geoEndpoint = `https://data.baltimorecity.gov/resource/k5ry-ef3g.json`;
 
 
+
+// geocoding addresses
+const geocode = async (data) => {
+
+    
+}
+
+
+
 // get addresses of restaurants
 const getAddresses = async (endp) => {
 
@@ -19,9 +28,14 @@ const getAddresses = async (endp) => {
 
                 restaurantAddresses.push(obj);
             })
+
+            // geocode addresses
+            geocode(restaurantAddresses); // ----> look into hoisting
+
          }) .catch ((error)=>{
             console.log(`Error: ${error}`);
         })
 }
 
 getAddresses(geoEndpoint);
+
