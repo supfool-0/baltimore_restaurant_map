@@ -52,49 +52,8 @@ function grabUserSelectedNeighborhood(event) {
 
 
 
-
 // Event handler for the form element
 const form = document.querySelector('form');
 form.addEventListener('submit', grabUserSelectedNeighborhood);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-// async function getBreed(breed){
-//     const url = `https://dog.ceo/api/breed/${breed}/images/random`;
-//     try{
-//         const response = await axios.get(url);
-//         const dogBreedImg = response.data.message;
-//         dogPic(dogBreedImg);
-//     } catch(error){
-//         console.log(error);
-//     }
-// }
-
-// function dogPic(breed){
-//     const img = document.createElement('img');
-//     img.src = breed;
-//     removePic();
-//     const appendDog = document.querySelector('#append-dog');
-//     appendDog.append(img);
-// }
-
-// function removePic(){
-//     const oldPic = document.querySelector('#append-dog');
-//     while(oldPic.lastChild){
-//         oldPic.removeChild(oldPic.lastChild);
-//     }
-// }
-
-// const form = document.querySelector('form');
-// form.addEventListener('submit', getValue); // pass getValue by reference 'no ()' so it will only invoke when there is an event
