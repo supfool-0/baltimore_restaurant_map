@@ -37,17 +37,14 @@ human_address: "{"address": "1801 NORTH AVE", "city": "Baltimore", "state": "MD"
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-
 |  Day | Deliverable | Status
 |---|---| ---|
 |Nov 9| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
 |Nov 10| Project Approval | Incomplete
 |Nov 12| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Nov 13| Pseudocode / actual code | Incomplete
-|Nov 16| MVP | Incomplete
+|Nov 13| MVP | Incomplete
+|Nov 16| Post MVP
 |Nov 17| Presentations | Incomplete
 
 ## Priority Matrix
