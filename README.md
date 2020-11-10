@@ -2,15 +2,26 @@
 
 ## Project Name
 
-The name of your project.
+Baltimore Restaurant Map
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+This project maps all the restaurant locations in Baltimore. Restaurant address locations are obtained from the [Baltimore Open Data API](https://data.baltimorecity.gov/Culture-Arts/Restaurants/k5ry-ef3g). These addresses will need to be geocoded with [Geocodio](https://www.geocod.io/) to latitude and longitude coordinates, then mapped out using [Mapbox](https://www.mapbox.com/).
 
 ## API and Data Sample
 
 Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+```
+{
+name: "BERMUDA BAR",
+zipcode: "21213",
+neighborhood: "Broadway East",
+councildistrict: "12",
+policedistrict: "EASTERN",
+location_1: {
+human_address: "{"address": "1801 NORTH AVE", "city": "Baltimore", "state": "MD", "zip": ""}"
+}
+```
 
 ## Wireframes
 
