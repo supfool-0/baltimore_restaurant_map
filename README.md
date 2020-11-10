@@ -2,7 +2,7 @@
 
 ## Baltimore Restaurant Map
 
-This project maps all the restaurant locations in Baltimore. Restaurant address locations are obtained from the [Baltimore Open Data API](https://data.baltimorecity.gov/Culture-Arts/Restaurants/k5ry-ef3g). These addresses will need to be geocoded with [Geocodio](https://www.geocod.io/) to latitude and longitude coordinates, then mapped out using [Mapbox](https://www.mapbox.com/).
+This project maps all the restaurant locations in Baltimore. Restaurant address locations are obtained from the [Baltimore Open Data API](https://data.baltimorecity.gov/Culture-Arts/Restaurants/k5ry-ef3g). These addresses will need to be geocoded with [Geocodio](https://www.geocod.io/) to latitude and longitude coordinates, then mapped out using [Mapbox](https://www.mapbox.com/). This dataset has roughy 1,000 data points.
 
 ## API and Data Sample
 
