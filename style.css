@@ -15,3 +15,7 @@ label{
 body{
     background-color: #9ce9ff;
 }
+section{
+    display: flex;
+    justify-content: center;
+}

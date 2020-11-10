@@ -43,52 +43,28 @@ function populateDropdown(neighborhoodList){
 
 
 
+// grab user selected neighborhood 
+function grabUserSelectedNeighborhood(event) {
+    event.preventDefault(); // prevents the page from refreshing
+    const optionValue = document.querySelector('select').value;
+    console.log(optionValue);
+}
+
+
+
+
+// Event handler for the form element
+const form = document.querySelector('form');
+form.addEventListener('submit', grabUserSelectedNeighborhood);
 
 
 
 
 
 
-// /Users/user/GeneralAssembly/sei/garnet/unit_1/week_3/monday/homework/hooking_up_API
 
 
 
-
-
-
-
-// // Creates a dynamic drop-down list
-// const getOptions = async () => {
-//     const url = 'https://dog.ceo/api/breeds/list/all';
-//     try {
-//         const response = await axios.get(url);
-//         // console.log(response.data.message);
-//         const dogList = Object.keys(response.data.message);
-//         optionValues(dogList);
-//     } catch(error){
-//         console.log(error);
-//     }
-// }
-
-// getOptions();
-
-// //// populates dropdown with dog breeds
-// function optionValues(list){
-//     const select = document.querySelector('#select-breed');
-//     return list.forEach((dog) => {
-//         const option = document.createElement('option');
-//         option.value = dog;
-//         option.textContent = dog;
-//         select.append(option);
-//     });
-// }
-
-// function getValue(event) { // event object is created upon form submission
-//     event.preventDefault(); // prevents the page from refreshing
-//     const optionValue = document.querySelector('select').value;
-//     // console.log(optionValue);
-//     getBreed(optionValue);
-// }
 
 
 
