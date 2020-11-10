@@ -55,9 +55,11 @@ human_address: "{"address": "1801 NORTH AVE", "city": "Baltimore", "state": "MD"
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| General HTML CSS | L | 2hrs| 3.5hrs | 3.5hrs |
+| Loading Dropdown Menu| H | 1.5hrs| 2.5hrs | 2.5hrs |
+| Learning to use MapBox and Geocodio| H | 3hrs| 2.5hrs | 2.5hrs |
+| Rendering specific Neighborhood| H | 3hrs| 2.5hrs | 2.5hrs |
+| Total | H | 9hrs| 5hrs | 5hrs |
 
 ## Code Snippet
 
