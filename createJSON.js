@@ -41,9 +41,10 @@ const callMapQuest = async (dict) => {
     let loopCount = Math.floor(len / 100); // =9
     let lastloopCount = (len % 100); // =59
     
+
+    // Trying to figure out this loop!
     // generating urls while taking into consideration the 100 address batch limit
     Object.values(dict).forEach(function(address) {
-
 
         let i = 0;
         let batchURL = serviceEndpoint;
@@ -56,7 +57,6 @@ const callMapQuest = async (dict) => {
         batchURL += `&key=${YOUR_API_KEY}`
         // exectue API call here
         
-
     });
 
 
@@ -76,8 +76,8 @@ const callMapQuest = async (dict) => {
 
 
 // I like this format
-https://www.mapquestapi.com/geocoding/v1/batch?&inFormat=kvp&outFormat=json&thumbMaps=false&maxResults=1&location=Denver, 
-CO&location=1555 Blake St, Denver, CO 80202&location=Boulder&key=KEY
+// https://www.mapquestapi.com/geocoding/v1/batch?&inFormat=kvp&outFormat=json&thumbMaps=false&maxResults=1&location=Denver, 
+// CO&location=1555 Blake St, Denver, CO 80202&location=Boulder&key=KEY
 
 
 
