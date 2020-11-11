@@ -8,6 +8,7 @@ const getAddresses = async (endp) => {
     let restaurantDict = new Object();
 
     await axios.get(endp)
+
         .then((result)=>{
             result.data.forEach( restaurant => {
 
@@ -16,7 +17,7 @@ const getAddresses = async (endp) => {
                 restaurantDict[restaurant.name] = formattedAddy;
             })
             
-            // batchCallGeocodio(restaurantDict);
+            batchCallGeocodeio(restaurantDict);
             // makeJSON(restaurantDict);
 
          }) .catch ((error)=>{
@@ -28,15 +29,31 @@ getAddresses(geoEndpoint);
 
 
 
+// batch calling geocode.io with dict obj of addresses
 const batchCallGeocodeio = async (dict) => {
 
+    const YOUR_API_KEY = `f4b4fc94749253fffff5fc9a54b44ab7a7cf777`;
+    let serviceEndpoint = `https://api.geocod.io/v1.6/geocode?api_key=${YOUR_API_KEY}`;
+
+    await axios.post(serviceEndpoint, dict)
+    
+        .then((response)=>{
+            console.log(response.data);
+        }) .catch ((error)=>{
+            console.log(`Error: ${error}`);
+        })
 }
 
 
 
 
 
-//---------- Was going to make a JSON file so I wouldn't have to get add lat and long everytime
+
+
+
+
+
+//---------- Was going to make a JSON file so I wouldn't have call geocode.io all the fricken time
 
 // creating JSON formatted file per format requirements (https://www.geocod.io/docs/#geocoding)
 // the resulting JSON will be the batch input file for geocod.io
@@ -48,28 +65,11 @@ const batchCallGeocodeio = async (dict) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-// const geocodeioAPIkey = `f4b4fc94749253fffff5fc9a54b44ab7a7cf777`;
-// // geocoding addresses
-// const geocode = async (data) => {
-
-
-// }
+//---------- Example curl cmd
 
 // curl -X POST \
-//   -H "Content-Type: application/json" \
-//   -d '["1109 N Highland St, Arlington VA", "525 University Ave, Toronto, ON, Canada", "4410 S Highway 17 92, Casselberry FL", "15000 NE 24th Street, Redmond WA", "17015 Walnut Grove Drive, Morgan Hill CA"]' 
-//   https://api.geocod.io/v1.6/geocode?api_key=YOUR_API_KEY
+// -H "Content-Type: application/json" \
+// -d '["1109 N Highland St, Arlington VA", "525 University Ave, Toronto, ON, Canada", "4410 S Highway 17 92, Casselberry FL", "15000 NE 24th Street, Redmond WA", "17015 Walnut Grove Drive, Morgan Hill CA"]' \
+// https://api.geocod.io/v1.6/geocode?api_key=YOUR_API_KEY
 
 
-// // geocode addresses
-// geocode(restaurantAddresses); // ----> look into hoisting
