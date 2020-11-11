@@ -8,7 +8,6 @@ const getNeighborhoods = async (endpoint) => {
 
     await axios.get(endpoint)
 
-        
         .then((result)=>{
 
             // get unique neighborhood names
