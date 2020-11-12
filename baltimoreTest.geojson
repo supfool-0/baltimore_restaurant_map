@@ -1,0 +1,27 @@
+{
+  "features": [
+    {
+      "type": "Baltimore",
+      "properties": {
+        "title": "4509 BELAIR ROAD, Baltimore MD",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [-76.562164, 39.330647],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Baltimore",
+      "properties": {
+        "title": "1919 FLEET ST, Baltimore MD",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [-76.589436, 39.284708],
+        "type": "Point"
+      }
+    }
+  ],
+  "type": "BaltimoreRestaurantCollection"
+}
