@@ -1,6 +1,7 @@
 const endpoint = `https://data.baltimorecity.gov/resource/k5ry-ef3g.json`;
 
 
+
 // gets neighborhoods to populate dropdown box
 const getNeighborhoods = async (endpoint) => {
 
@@ -57,4 +58,15 @@ form.addEventListener('submit', grabUserSelectedNeighborhood);
 
 
 
-// Going to try to implement mapbox with only one received file 
+// mapbox's provided code to render map on webpage
+mapboxgl.accessToken = 'pk.eyJ1IjoiZGlsdHNqZXJpIiwiYSI6ImNraGY0bmExeDBuMGQycGx5Zjl1cHV4d2oifQ.BqlhlzhB0DvkpJZHhGmC9Q';
+let map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/mapbox/streets-v11', // style URL
+    center: [-76.6, 39.3], // starting position [lng, lat] NW
+    zoom: 11 // starting zoom
+ });
+
+
+
+ // Going to try to implement mapbox with only one received file 
