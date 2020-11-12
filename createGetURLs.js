@@ -35,35 +35,44 @@ getAddresses(baltimoreOpenDataEndpoint);
 // mapQuest Developer's FREE forward geocoding (batch mode - limited to 100 address at a time)
 const callMapQuest = async (dict) => {
 
+
     const YOUR_API_KEY = `8zBqKVlrb42b0WZ6bA1uCRPTm99oVacD`;
     let serviceEndpoint = `https://www.mapquestapi.com/geocoding/v1/batch?&inFormat=kvp&outFormat=json&thumbMaps=false&maxResults=1`;
     let len = Object.keys(dict).length; // number of address in the object dictionary =959
     let loopCount = Math.floor(len / 100); // =9
-    let lastloopCount = (len % 100); // =59
-    
+    let lastCount = (len % 100); // =59
+    let addressArr = Object.values(dict);
+    let urls = [];
 
-    // Trying to figure out this loop!
+
     // generating urls while taking into consideration the 100 address batch limit
-    Object.values(dict).forEach(function(address) {
+    for(let i=0; i<loopCount; i++){
 
-        let i = 0;
         let batchURL = serviceEndpoint;
+        let slicedArr = addressArr.slice(i*100,(i*100)+100);
 
-        while(i<100){
+        slicedArr.forEach((address)=>{
             batchURL += `&location=${address}`;
-            i++;
-        }
+        });
+        batchURL += `&key=${YOUR_API_KEY}`; // appending key
+        urls.push(batchURL);
+        // would exectue API call here ... going to use POSTMAN
+    }  
 
-        batchURL += `&key=${YOUR_API_KEY}`
-        // exectue API call here
-        
+
+    // take care of last 59 address
+    let lastURL = serviceEndpoint;
+    let lastSlicedArr = addressArr.slice(loopCount*100,(loopCount*100)+lastCount);
+    lastSlicedArr.forEach((address)=>{
+            lastURL += `&location=${address}`;
     });
+    lastURL += `&key=${YOUR_API_KEY}`; // appending key
+    urls.push(lastURL);
 
+    //console.log(urls[9]); -- printed urls to put into POSTMAn
 
-
-    for(let i=0; i<=loopCount; i++){
-        let generatedURL = null;
-    }
+ }
+    
 
     // await axios.get(generatedURL)
 
@@ -72,7 +81,7 @@ const callMapQuest = async (dict) => {
     //     }) .catch ((error)=>{
     //         console.log(`Error: ${error}`);
     //     })
-}
+
 
 
 // I like this format
