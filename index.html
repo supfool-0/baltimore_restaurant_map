@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" /> mapbox-->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script defer src="./app.js"></script>
     <script defer src="./createGetURLs.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
     <link href="./style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
     <title>Baltimore Restaurants</title>
+    <style>
+        body { margin: 0; padding: 0; }
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    </style>
 </head>
 <body>
 
@@ -29,6 +36,19 @@
 
     <!-- div for appending content-->
     <div id="bigMap"></div>
+    <div id="map"></div>
 
+    <script>
+        // TO MAKE THE MAP APPEAR YOU MUST
+        // ADD YOUR ACCESS TOKEN FROM
+        // https://account.mapbox.com
+        mapboxgl.accessToken = '<your access token here>';
+    var map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/mapbox/streets-v11', // style URL
+    center: [-74.5, 40], // starting position [lng, lat]
+    zoom: 9 // starting zoom
+    });
+    </script>
 </body>
 </html>

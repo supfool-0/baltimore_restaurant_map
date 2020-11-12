@@ -18,8 +18,6 @@ const getAddresses = async (endp) => {
             })
             
             callMapQuest(restaurantDict);
-            // makeJSON(restaurantDict);
-            // ** note: initally created the dict for geocodio. Could reconsider this structure type
 
          }) .catch ((error)=>{
             console.log(`Error: ${error}`);
@@ -60,7 +58,7 @@ const callMapQuest = async (dict) => {
     }  
 
 
-    // take care of last 59 address
+    // take care of the straggling addresses
     let lastURL = serviceEndpoint;
     let lastSlicedArr = addressArr.slice(loopCount*100,(loopCount*100)+lastCount);
     lastSlicedArr.forEach((address)=>{
@@ -69,37 +67,6 @@ const callMapQuest = async (dict) => {
     lastURL += `&key=${YOUR_API_KEY}`; // appending key
     urls.push(lastURL);
 
-    //console.log(urls[9]); -- printed urls to put into POSTMAn
+    //console.log(urls[9]); -- printed urls to put into POSTMAN
 
  }
-    
-
-    // await axios.get(generatedURL)
-
-    //     .then((response) =>{
-    //         console.log(response.data);
-    //     }) .catch ((error)=>{
-    //         console.log(`Error: ${error}`);
-    //     })
-
-
-
-// I like this format
-// https://www.mapquestapi.com/geocoding/v1/batch?&inFormat=kvp&outFormat=json&thumbMaps=false&maxResults=1&location=Denver, 
-// CO&location=1555 Blake St, Denver, CO 80202&location=Boulder&key=KEY
-
-
-
-
-
-
-
-//---------- Was going to make a JSON file so I wouldn't have call geocode.io all the fricken time
-
-// creating JSON formatted file per format requirements (https://www.geocod.io/docs/#geocoding)
-// the resulting JSON will be the batch input file for geocod.io
-// function makeJSON(dict){
-//     let dictString = JSON.stringify(dict);
-//     let fs = require('fs'); // node.js loading module 'fs' = file system
-//     fs.writeFile("geocodeJSON_input.json", dictstring);
-// }
