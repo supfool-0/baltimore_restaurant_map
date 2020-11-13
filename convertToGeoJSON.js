@@ -12,7 +12,7 @@ let batch10 = `{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2020 MapQuest
 
 
 // loaded all the lat and lng data into an array
-let batchArr = [batch1, batch2, batch3, batch4, batch5, batch6, batch7, batch8, batch9]; // , batch10
+let batchArr = [batch1, batch2, batch3, batch4, batch5, batch6, batch7, batch8, batch9, batch10];
 
 
 // the START of the geoJSON file
@@ -22,9 +22,13 @@ let geoJSONStr = `{"features":[`;
 // looping through each batch call to get lat and lng data
 batchArr.forEach(batch =>{
 
+    let k = 0;
+    let limit = 100;
     const batchOBJ = JSON.parse(batch);
 
-    for(let i=0;i<100;i++){
+    if(k===9){limit = 59};
+
+    for(let i=0;i<limit;i++){
 
         let address = `${batchOBJ.results[i].locations[0].street} Baltimore MD`;
         let lat = batchOBJ.results[i].locations[0].displayLatLng.lat;
@@ -43,6 +47,7 @@ batchArr.forEach(batch =>{
                         },`;
     
     } // closes 'for' loop
+    k++;
 }) // closes 'forEach' loop
 
 
