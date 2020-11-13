@@ -1,7 +1,7 @@
 {
   "features": [
     {
-      "type": "Baltimore",
+      "type": "Feature",
       "properties": {
         "title": "4509 BELAIR ROAD, Baltimore MD",
         "description": ""
@@ -12,7 +12,7 @@
       }
     },
     {
-      "type": "Baltimore",
+      "type": "Feature",
       "properties": {
         "title": "1919 FLEET ST, Baltimore MD",
         "description": ""
