@@ -36,7 +36,7 @@ for(let i=0;i<100;i++){
 
 geoJSONStr += `
                 ],
-                "type": "BaltimoreRestaurantCollection"`;
+                "type": "BaltimoreRestaurantCollection" }`;
 
 
 
