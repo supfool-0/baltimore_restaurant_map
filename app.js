@@ -68,5 +68,15 @@ let map = new mapboxgl.Map({
  });
 
 
+ 
+ // adding baltimore restaurant points as vector tile data layer
+ map.on('load', function () {
+    map.addSource('mapbox-terrain', {
+    type: 'vector',
+    url: 'mapbox://mapbox.mapbox-terrain-v2'
+});
+
+// I have a vector tileset
+//diltsjeri.7oenpy6i
 
  // Going to try to implement mapbox with only one received file 
