@@ -1,4 +1,4 @@
-{"features":[{    
+convertToGeoJSON.js:58 {"features":[{    
                             "type": "Feature",
                             "properties": {
                               "title": "4509 Belair Rd Baltimore MD",
@@ -8998,5 +8998,594 @@
                                 "coordinates": [-76.633387, 39.286011],
                                 "type": "Point"
                             }
-                        }
-],"type": "BaltimoreRestaurantCollection" }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "2501 Eastern Ave Baltimore MD",
+                              "description": "0"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.581277, 39.285772],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "2301 Argonne Dr Baltimore MD",
+                              "description": "1"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.579228, 39.339754],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "701 E Fort Ave Baltimore MD",
+                              "description": "2"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.604015, 39.272388],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "1425 Aliceanna St Baltimore MD",
+                              "description": "3"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.597495, 39.283156],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "1401 E Clement St Baltimore MD",
+                              "description": "4"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.594204, 39.270591],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "612 Cathedral St Baltimore MD",
+                              "description": "5"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.617264, 39.297211],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "1900 Aliceanna St Baltimore MD",
+                              "description": "6"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.589811, 39.283866],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "6302 York Rd Baltimore MD",
+                              "description": "7"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.610427, 39.371344],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "3606 S Hanover St Baltimore MD",
+                              "description": "8"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.609799, 39.238369],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "1041 Greenmount Ave Baltimore MD",
+                              "description": "9"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.607314, 39.302393],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "663 W Pratt St Baltimore MD",
+                              "description": "10"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.625741, 39.285994],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "213 Penn St Baltimore MD",
+                              "description": "11"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.625579, 39.285599],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "4901 Pennington Ave Baltimore MD",
+                              "description": "12"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.587877, 39.222122],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "7 Patapsco Ave Baltimore MD",
+                              "description": "13"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.526594, 39.259497],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "301 S Exeter St Baltimore MD",
+                              "description": "14"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.600498, 39.286696],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "5440 Reisterstown Rd Baltimore MD",
+                              "description": "15"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.689588, 39.347049],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "5928 York Rd Baltimore MD",
+                              "description": "16"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.610122, 39.364802],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "1002 Eastern Ave Baltimore MD",
+                              "description": "17"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.600342, 39.285475],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "111 Mercer St Baltimore MD",
+                              "description": "18"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.612986, 39.288336],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "3130 Greenmount Ave Baltimore MD",
+                              "description": "19"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.609608, 39.327063],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "504 S Ann St Baltimore MD",
+                              "description": "20"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.591592, 39.285461],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "4800 Roland Ave Baltimore MD",
+                              "description": "21"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.635345, 39.350443],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "2002 Harford Rd Baltimore MD",
+                              "description": "22"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.599217, 39.313139],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "600 E Pratt St Baltimore MD",
+                              "description": "23"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.607407, 39.28713],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "3539 Belair Rd Baltimore MD",
+                              "description": "24"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.57012, 39.324049],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": " Baltimore MD",
+                              "description": "25"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.612333, 39.290443],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "301 Light St Baltimore MD",
+                              "description": "26"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.612889, 39.285071],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "202 W Read St Baltimore MD",
+                              "description": "27"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.618744, 39.300557],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "520 Washington Blvd Baltimore MD",
+                              "description": "28"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.622878, 39.285555],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "711 Eastern Ave Baltimore MD",
+                              "description": "29"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.605606, 39.284428],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "[1600 - 1699] Howard Ave Baltimore MD",
+                              "description": "30"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.444657, 39.313559],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "6500 Eastern Ave Baltimore MD",
+                              "description": "31"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.535887, 39.288336],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "201 E Pratt St Baltimore MD",
+                              "description": "32"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.610956, 39.286225],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "[3600 - 3714] Baltimore St Baltimore MD",
+                              "description": "33"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.631226, 39.242188],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "1627 Eastern Ave Baltimore MD",
+                              "description": "34"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.59432, 39.28537],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "101 S Eaton St Baltimore MD",
+                              "description": "35"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.565359, 39.291216],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "3212 Washington Blvd Baltimore MD",
+                              "description": "36"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.663253, 39.2581],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "2619 Foster Ave, 21 Baltimore MD",
+                              "description": "37"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.579373, 39.283927],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "1719 Poncabird Pass Baltimore MD",
+                              "description": "38"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.552405, 39.272442],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "887 E Fort Ave Baltimore MD",
+                              "description": "39"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.60185, 39.270481],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "6512 Reisterstown Rd Baltimore MD",
+                              "description": "40"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.704465, 39.35751],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "2401 Liberty Heights Ave Baltimore MD",
+                              "description": "41"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.654024, 39.318511],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "4330 E Lombard St Baltimore MD",
+                              "description": "42"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.560057, 39.291899],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "1701 S Clinton St Baltimore MD",
+                              "description": "43"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.568843, 39.272473],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "1032 Riverside Ave Baltimore MD",
+                              "description": "44"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.609276, 39.277442],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "5520 Reisterstown Rd Baltimore MD",
+                              "description": "45"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.691729, 39.348265],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "200 E Pratt St, 202 Baltimore MD",
+                              "description": "46"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.611467, 39.287352],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "136 W 25th St Baltimore MD",
+                              "description": "47"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.619506, 39.317936],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "318 S Broadway Baltimore MD",
+                              "description": "48"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.593861, 39.286944],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "207 S Broadway Baltimore MD",
+                              "description": "49"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.593389, 39.28898],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "5014 Curtis Ave Baltimore MD",
+                              "description": "50"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.586593, 39.220592],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "6796 Reisterstown Rd Baltimore MD",
+                              "description": "51"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.705653, 39.357117],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "[1302 - 1398] North Ave Baltimore MD",
+                              "description": "52"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.692675, 39.25165],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "1225 Cathedral St Baltimore MD",
+                              "description": "53"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.618351, 39.304183],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "242 S High St Baltimore MD",
+                              "description": "54"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.602033, 39.286519],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "3733 S Hanover St Baltimore MD",
+                              "description": "55"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.610311, 39.236517],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "3358 Chestnut Ave Baltimore MD",
+                              "description": "56"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.62945, 39.328528],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "719 S Broadway Baltimore MD",
+                              "description": "57"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.592919, 39.28305],
+                                "type": "Point"
+                            }
+                        },{    
+                            "type": "Feature",
+                            "properties": {
+                              "title": "2 S Decker Ave Baltimore MD",
+                              "description": "58"
+                            },
+                            "geometry": {
+                                "coordinates": [-76.574272, 39.291972],
+                                "type": "Point"
+                            }
+                        },],"type": "BaltimoreRestaurantCollection" }

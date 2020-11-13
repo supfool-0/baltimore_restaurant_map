@@ -20,9 +20,9 @@ let geoJSONStr = `{"features":[`;
 
 
 // looping through each batch call to get lat and lng data
+let k = 0;
 batchArr.forEach(batch =>{
 
-    let k = 0;
     let limit = 100;
     const batchOBJ = JSON.parse(batch);
 
@@ -55,41 +55,5 @@ batchArr.forEach(batch =>{
 geoJSONStr += `],"type": "BaltimoreRestaurantCollection" }`;
 
 
-
-
 console.log(geoJSONStr);
 
-// console.log(batchOBJ.results[0].locations[0].adminArea5);
-// console.log(batchOBJ.results[0].locations[0].displayLatLng.lat);
-// console.log(batchOBJ.results[0].locations[0].displayLatLng.lng);
-
-// console.log(batchOBJ.results[1].locations[0].street);
-// console.log(batchOBJ.results[1].locations[0].displayLatLng.lat);
-// console.log(batchOBJ.results[1].locations[0].displayLatLng.lng);
-
-// {
-//     "features": [
-//       {
-//         "type": "Feature",
-//         "properties": {
-//           "title": "4509 BELAIR ROAD, Baltimore MD",
-//           "description": ""
-//         },
-//         "geometry": {
-//           "coordinates": [-76.562164, 39.330647],
-//           "type": "Point"
-//         }
-//       },
-//       {
-//         "type": "Feature",
-//         "properties": {
-//           "title": "1919 FLEET ST, Baltimore MD",
-//           "description": ""
-//         },
-//         "geometry": {
-//           "coordinates": [-76.589436, 39.284708],
-//           "type": "Point"
-//         }
-//       }
-//     ],
-//     "type": "BaltimoreRestaurantCollection"
