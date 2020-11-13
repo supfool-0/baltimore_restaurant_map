@@ -8998,4 +8998,5 @@ convertToGeoJSON.js:55 {"features":[{
                                 "coordinates": [-76.633387, 39.286011],
                                 "type": "Point"
                             }
-                        },],"type": "BaltimoreRestaurantCollection" }
+                        }
+],"type": "BaltimoreRestaurantCollection" }
