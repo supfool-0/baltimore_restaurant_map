@@ -96,12 +96,13 @@ let map = new mapboxgl.Map({
 
 
 
-// filter map by neighborhood
+// filter and load map by neighborhood
 function filterByNeighborhood(neighborhood,dict){
 
     // remove previous markers if any on the map
     if(currentMarkers.length !== 0){
-        currentMarkers.forEach(marker => map.remove(marker));
+        currentMarkers.forEach(marker => marker.remove());
+        currentMarkers =[];
     }
 
     // lat && lng data grabbed from MapQuest's API
@@ -132,35 +133,42 @@ function filterByNeighborhood(neighborhood,dict){
         for(let i=0;i<limit;i++){
     
             let address = `${batchOBJ.results[i].locations[0].street} BALTIMORE MD`;
-            address = address.toUpperCase();
+            address = address.toUpperCase(); // formatting address 
             let lat = batchOBJ.results[i].locations[0].displayLatLng.lat;
             let lng = batchOBJ.results[i].locations[0].displayLatLng.lng;
 
-            if (dict[address]){ // some coming back undefined --> data cleanup needed
+            // some coming back undefined --> data cleanup needed
+            if (dict[address]){ 
 
                 let info = dict[address].split(",");
                 if(info[1] === neighborhood){
         
-                    checker = 1; // there is at least one restaurant in the neighboorhood
-                    currentMarkers = [`${lng},${lat}`];
+                    // there is at least one restaurant in the neighboorhood
+                    checker = 1; 
+
+                    // setting marker
                     let marker = new mapboxgl.Marker()
-                    .setLngLat([lng, lat])
-                    .addTo(map);
+                        .setLngLat([lng, lat])
+                        .addTo(map);
+                    currentMarkers.push(marker);
                 }
-
-
-                // remove current markers 
             }
-
-
         }
     k++;
     });
 
+    // dynamically moves map to selected neighborhood
+    if(currentMarkers.length !== 0){
+        map.flyTo({center: [currentMarkers[0]._lngLat.lng ,currentMarkers[0]._lngLat.lat]});
+    }
+
     // there are no restaurants in the neigboorhood
     if(checker === 0){
-        console.log(neighborhood);
-        // createElement('p');
+        let para = document.createElement('p');
+        para.textContent = `test`;
+        let dropdown = document.querySelector('#item');
+        dropdown.append(para);
+        checker = 0; // reset checker
     }
 
 }
