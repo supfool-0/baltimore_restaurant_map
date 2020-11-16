@@ -7,24 +7,29 @@ body{
 h1,h3,p,footer{
     font-family: 'Architects Daughter', cursive;
     text-align: center;
-    padding: 0px;
+    margin: 5px;
+    border: 2px solid black;
 }
 h1{
     font-size: 2.4em;
+    margin-bottom: 0px;
 }
 h3{
     font-size: 1.6em;
 }
 label{
     font-family: 'Roboto', sans-serif;
+    border: 2px solid black;
+    margin-left: 5px;
 }
 form{
     padding: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
+    border: 2px solid black;
 }
 #map{
-    height: 550px;
+    height: 575px;
 }
 .item{
     border: 2px solid black;
@@ -34,39 +39,32 @@ form{
     flex-direction: row wrap;
     background-color: #baa3c4;
     box-shadow: 2px 2px #cac0cf;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
+    border: 2px solid black;
+}
+#dropdown{
+    font: inherit;
+    border-radius: 5px;
+    padding-left: 5px;
+    height: 25px;
 }
 p{
     padding: 5px;
     margin: 5px;
     color: #d4411c;
 }
-
-/*--- got this style from the internet Stackoverflow--> */
-button{
+.button{
+    margin-left: 5px;
     border-radius: 5px;
     border: 0;
     width: 80px;
     height:25px;
-    font-family: Tahoma;
-    background: #f4f4f4;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #f4f4f4), color-stop(100%, #ededed));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
-    /* IE10+ */
-    background: linear-gradient(to bottom, #f4f4f4 1%, #ededed 100%);
-    /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4', endColorstr='#ededed', GradientType=0);
-    /* IE6-9 */
+}
+a{
+    text-decoration: none;
 }
 
+/* ------------------------------------------------ Media Query ---------- */
 @media(max-width: 400px){
     h1{
         font-size: 2em;
@@ -75,22 +73,23 @@ button{
         font-size: 1.2em;
     }
     h1,h3{
-        padding 0px;
-        padding-left: 5px;
-        padding-right: 5px
+        padding: 0px 5px 0px 5px;
+        margin: 5px;
     }
     .row{
+        border: 2px solid black;
         display: flex;
         flex-flow: column;
     }
-    button{
-        margin: 5px;
-        border: 2px solid black;
-        display: block;
+    #dropdown{
         text-align: center;
-        width: 100%;
+    }
+    .button{
+        margin-top: 10px;
+        width: 97%;
+        border: 2px solid black;
     }
     #map{
-        height: 450px;
+        height: 475px;
     }
 }

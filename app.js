@@ -6,7 +6,7 @@ let currentMarkers = [];
 // calls on Baltimore Open Data to get list of neighborhoods
 const getNeighborhoods = async (endpoint) => {
 
-    let neighborhoodList = [];
+    let neighborhoodList = ['-'];
 
     await axios.get(endpoint)
 
@@ -35,7 +35,7 @@ getNeighborhoods(endpoint);
 
 // actual populating of dropdown box with neighborhood data
 function populateDropdown(neighborhoodList){
-    const select = document.querySelector('#neighborhoods');
+    const select = document.querySelector('#dropdown');
     return neighborhoodList.forEach((n) => {
         const option = document.createElement('option');
         option.value = n;
@@ -90,9 +90,9 @@ form.addEventListener('submit', grabUserSelectedNeighborhood);
 mapboxgl.accessToken = 'pk.eyJ1IjoiZGlsdHNqZXJpIiwiYSI6ImNraGY0bmExeDBuMGQycGx5Zjl1cHV4d2oifQ.BqlhlzhB0DvkpJZHhGmC9Q';
 let map = new mapboxgl.Map({
     container: 'map', // container id
-    style: 'mapbox://styles/mapbox/streets-v11', // style URL
+    style: 'mapbox://styles/mapbox/dark-v10',
     center: [-76.6, 39.3], // starting position [lng, lat] NW
-    zoom: 12 // starting zoom
+    zoom: 14 // starting zoom
  });
 
 
@@ -156,6 +156,7 @@ function filterByNeighborhood(neighborhood,dict){
                     // setting marker
                     let marker = new mapboxgl.Marker()
                         .setLngLat([lng, lat])
+                        .setPopup(new mapboxgl.Popup({offset: 50 }).setText('testtestakdaflaksdfnasoidfaosindf'))
                         .addTo(map);
                     currentMarkers.push(marker);
                 }
@@ -167,7 +168,9 @@ function filterByNeighborhood(neighborhood,dict){
     // dynamically moves map to selected neighborhood
     if(currentMarkers.length !== 0){
         map.flyTo({center: [currentMarkers[0]._lngLat.lng ,currentMarkers[0]._lngLat.lat]});
+        // map.setView([currentMarkers[0]._lngLat.lng ,currentMarkers[0]._lngLat.lat],11); // zoom to location
     }
+
 
     // there are no restaurants in the neigboorhood
     if(checker === 0){
