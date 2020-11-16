@@ -52,21 +52,18 @@ const callMapQuest = async (dict) => {
         slicedArr.forEach((address)=>{
             batchURL += `&location=${address}`;
         });
-        batchURL += `&key=${YOUR_API_KEY}`; // appending key
+        batchURL += `&key=${YOUR_API_KEY}`;
         urls.push(batchURL);
-        // would exectue API call here ... going to use POSTMAN
     }  
 
 
+    
     // take care of the straggling addresses
     let lastURL = serviceEndpoint;
     let lastSlicedArr = addressArr.slice(loopCount*100,(loopCount*100)+lastCount);
     lastSlicedArr.forEach((address)=>{
             lastURL += `&location=${address}`;
     });
-    lastURL += `&key=${YOUR_API_KEY}`; // appending key
+    lastURL += `&key=${YOUR_API_KEY}`;
     urls.push(lastURL);
-
-    //console.log(urls[9]); -- printed urls to put into POSTMAN
-
  }

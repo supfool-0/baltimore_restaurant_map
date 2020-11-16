@@ -2,6 +2,7 @@ const endpoint = `https://data.baltimorecity.gov/resource/k5ry-ef3g.json`;
 let currentMarkers = [];
 
 
+
 // calls on Baltimore Open Data to get list of neighborhoods
 const getNeighborhoods = async (endpoint) => {
 
@@ -165,8 +166,8 @@ function filterByNeighborhood(neighborhood,dict){
     // there are no restaurants in the neigboorhood
     if(checker === 0){
         let para = document.createElement('p');
-        para.textContent = `test`;
-        let dropdown = document.querySelector('#item');
+        para.textContent = `test`; // going to put notification here
+        let dropdown = document.querySelector('.item');
         dropdown.append(para);
         checker = 0; // reset checker
     }

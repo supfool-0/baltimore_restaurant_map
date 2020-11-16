@@ -1,7 +1,6 @@
 body{
     display: flex;
     flex-direction: column;
-    /* overflow: hidden; */
 }
 h1,h3{
     font-family: 'Architects Daughter', cursive;
@@ -22,15 +21,11 @@ form{
     margin-top: 5px;
     margin-bottom: 5px;
 }
-/* .neighborhoods{
-    border-radius:10px;
-} */
 #map{
-    /* position: absolute;
-    bottom: 0px; */
     height: 550px;
 }
 .item{
     border: 2px solid black;
 }
+
 /* update README, do the stuff Chris said to do in the meeting */
