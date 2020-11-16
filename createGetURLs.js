@@ -43,6 +43,7 @@ const callMapQuest = async (dict) => {
     let urls = [];
 
 
+    
     // generating urls while taking into consideration the 100 address batch limit
     for(let i=0; i<loopCount; i++){
 
@@ -57,7 +58,7 @@ const callMapQuest = async (dict) => {
     }  
 
 
-    
+
     // take care of the straggling addresses
     let lastURL = serviceEndpoint;
     let lastSlicedArr = addressArr.slice(loopCount*100,(loopCount*100)+lastCount);
