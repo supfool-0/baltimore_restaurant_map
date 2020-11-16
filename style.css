@@ -8,7 +8,6 @@ h1,h3,p,footer{
     font-family: 'Architects Daughter', cursive;
     text-align: center;
     margin: 5px;
-    border: 2px solid black;
 }
 h1{
     font-size: 2.4em;
@@ -19,20 +18,15 @@ h3{
 }
 label{
     font-family: 'Roboto', sans-serif;
-    border: 2px solid black;
     margin-left: 5px;
 }
 form{
     padding: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
-    border: 2px solid black;
 }
 #map{
-    height: 575px;
-}
-.item{
-    border: 2px solid black;
+    height: 600px;
 }
 .row{
     display: flex;
@@ -40,7 +34,6 @@ form{
     background-color: #baa3c4;
     box-shadow: 2px 2px #cac0cf;
     margin-bottom: 2px;
-    border: 2px solid black;
 }
 #dropdown{
     font: inherit;
@@ -63,6 +56,9 @@ p{
 a{
     text-decoration: none;
 }
+footer{
+    margin-top: 5px;
+}
 
 /* ------------------------------------------------ Media Query ---------- */
 @media(max-width: 400px){
@@ -77,7 +73,6 @@ a{
         margin: 5px;
     }
     .row{
-        border: 2px solid black;
         display: flex;
         flex-flow: column;
     }
@@ -87,7 +82,6 @@ a{
     .button{
         margin-top: 10px;
         width: 97%;
-        border: 2px solid black;
     }
     #map{
         height: 475px;
