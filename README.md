@@ -2,7 +2,7 @@
 
 ## Baltimore Restaurant Map
 
-This project maps all restaurant locations in Baltimore and allows the user the capability to search restaurants by neighboorhood. Restaurant address locations are obtained from the [Baltimore Open Data API](https://data.baltimorecity.gov/Culture-Arts/Restaurants/k5ry-ef3g). These addresses are geocoded with [MapQuest Developer's Geocoding API](https://developer.mapquest.com/documentation/geocoding-api/)to latitude and longitude coordinates from their physical address, then mapped out using [Mapbox](https://www.mapbox.com/). This dataset has roughy 1,000 data points.
+This project maps all restaurant locations in Baltimore and allows the user the capability to search restaurants by neighborhood. Restaurant address locations are obtained from the [Baltimore Open Data API](https://data.baltimorecity.gov/Culture-Arts/Restaurants/k5ry-ef3g). These addresses are geocoded with [MapQuest Developer's Geocoding API](https://developer.mapquest.com/documentation/geocoding-api/)to latitude and longitude coordinates from their physical address, then mapped out using [Mapbox](https://www.mapbox.com/). This dataset has roughy 1,000 data points.
 
 ## API and Data Sample
 
@@ -24,10 +24,10 @@ human_address: "{"address": "1801 NORTH AVE", "city": "Baltimore", "state": "MD"
 [Baltimore Restaurant Website Wireframe Concept](https://wireframe.cc/pro/pp/1a29ea99d392747)
 
 #### MVP 
-- Create a dropdown menu pulling from the Baltimore Open Data api that allows the user to select a neighboorhood
-- Initially render page with all restaurants on display in MapBox
-	- This will include the use of geocodio to get coordinates
-- Upon selection of neighboorhood render a new map with restaurants only in that neighboorhood
+- Create a dropdown menu pulling from the Baltimore Open Data API that allows the user to select a neighboorhood
+- Render page with points of every restaurant in selected neighborhood (geocoding involved)
+- Zoom to location of interest
+- If neighborhood doesn't have any restaurants, notifiy user
 
 #### PostMVP  
 - Add a button that takes user to another page 'Your restaurant?'
@@ -39,11 +39,11 @@ human_address: "{"address": "1801 NORTH AVE", "city": "Baltimore", "state": "MD"
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Nov 9| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|Nov 10| Project Approval | Incomplete
-|Nov 12| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Nov 13| Pseudocode / actual code | Incomplete
-|Nov 13| MVP | Incomplete
+|Nov 9| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|Nov 10| Project Approval | Complete
+|Nov 12| Core Application Structure (HTML, CSS, etc.) | Complete
+|Nov 13| Pseudocode / actual code | Complete
+|Nov 13| MVP | Complete
 |Nov 16| Post MVP | Incomplete
 |Nov 17| Presentations | Incomplete
 
