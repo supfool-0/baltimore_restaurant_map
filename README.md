@@ -60,7 +60,8 @@ human_address: "{"address": "1801 NORTH AVE", "city": "Baltimore", "state": "MD"
 | Getting all address data from Baltimore's Open Data API| H | 3hrs| 2.5hrs | 2.5hrs |
 | Learning to use ~~Geocodio~~ MapQuest Developer's Geocoding API| H | 4hrs| 2.5hrs | 2.5hrs |
 | Generated url's to call on MapQuest's Developer's Geocoding API| H | 4hrs| 2.5hrs | 2.5hrs |
-| Wasted time generating geoJSON files and reading MapBox documentation| H | 6hrs| 2.5hrs | 2.5hrs |
+| Used Postman to make url batch calls| H | 1 hrs| 2.5hrs | 2.5hrs |
+| Wasted time generating geoJSON files and reading MapBox documentation| H | 7hrs| 2.5hrs | 2.5hrs |
 | Rendering specific neighborhood with js| H | 3hrs| 2.5hrs | 2.5hrs |
 | Notification if no restaurants are in the area| H | 2hrs| 2.5hrs | 2.5hrs |
 | Zooming to specific selected neighborhood| H | 2 hrs| 2.5hrs | 2.5hrs |
@@ -113,4 +114,4 @@ Use this section to include a brief code snippet of functionality that you are p
 ```
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+Had to use MapQuest's Developer Geocoding API instead of Geocodio, because Geocodio isn't a free service.
