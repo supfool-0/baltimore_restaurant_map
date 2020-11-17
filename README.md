@@ -73,9 +73,43 @@ human_address: "{"address": "1801 NORTH AVE", "city": "Baltimore", "state": "MD"
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+ // looping through each batch call to get lat and lng data 
+    let k = 0;
+    let checker = 0;
+    batchArr.forEach(batch =>{
+
+        let limit = 100;
+        const batchOBJ = JSON.parse(batch);
+
+        if(k===9){limit = 59};
+
+        for(let i=0;i<limit;i++){
+    
+            let address = `${batchOBJ.results[i].locations[0].street} BALTIMORE MD`;
+            address = address.toUpperCase(); // formatting address 
+            let lat = batchOBJ.results[i].locations[0].displayLatLng.lat;
+            let lng = batchOBJ.results[i].locations[0].displayLatLng.lng;
+
+            // some coming back undefined --> data cleanup needed
+            if (dict[address]){ 
+
+                let info = dict[address].split(",");
+                if(info[1] === neighborhood){
+
+                    checker = 1;
+
+                    // setting marker
+                    let marker = new mapboxgl.Marker()
+                        .setLngLat([lng, lat])
+                        .setPopup(new mapboxgl.Popup({offset: 50 })
+                            .setText(`${info[0]}-${address}`))
+                        .addTo(map);
+                    currentMarkers.push(marker);
+                }
+            }
+        }
+    k++;
+    });
 ```
 
 ## Change Log
