@@ -101,8 +101,8 @@ let map = new mapboxgl.Map({
 function filterByNeighborhood(neighborhood,dict){
 
     // check if there is a notification on the page
-    if(document.querySelector('p')){
-        document.querySelector('p').remove();    
+    if(document.querySelector('.notification')){
+        document.querySelector('.notification').remove();    
     }
     
     // remove previous markers if any on the map
@@ -156,7 +156,8 @@ function filterByNeighborhood(neighborhood,dict){
                     // setting marker
                     let marker = new mapboxgl.Marker()
                         .setLngLat([lng, lat])
-                        .setPopup(new mapboxgl.Popup({offset: 50 }).setText('testtestakdaflaksdfnasoidfaosindf'))
+                        .setPopup(new mapboxgl.Popup({offset: 50 })
+                            .setText(`${info[0]}-${address}`))
                         .addTo(map);
                     currentMarkers.push(marker);
                 }
@@ -176,7 +177,7 @@ function filterByNeighborhood(neighborhood,dict){
     if(checker === 0){
         let para = document.createElement('p');
         para.textContent = `* No restaurants found in ${neighborhood}`;
-        para.className = 'item';
+        para.className = 'notification';
         let dropdown = document.querySelector('.row');
         dropdown.append(para);
     }
