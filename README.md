@@ -6,7 +6,8 @@ This project maps all restaurant locations in Baltimore and allows the user the 
 
 ## API and Data Sample
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+[Baltimore Open Data API](https://data.baltimorecity.gov/Culture-Arts/Restaurants/k5ry-ef3g)
+
 ```
 {
 name: "BERMUDA BAR",
@@ -55,19 +56,19 @@ human_address: "{"address": "1801 NORTH AVE", "city": "Baltimore", "state": "MD"
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| General HTML CSS | L | 2hrs| 3.5hrs | 3.5hrs |
-| Loading Dropdown Menu with Neighborhoods| H | 1.5hrs| 2.5hrs | 2.5hrs |
-| Getting all address data from Baltimore's Open Data API| H | 3hrs| 2.5hrs | 2.5hrs |
-| Learning to use ~~Geocodio~~ MapQuest Developer's Geocoding API| H | 4hrs| 2.5hrs | 2.5hrs |
-| Generated url's to call on MapQuest's Developer's Geocoding API| H | 4hrs| 2.5hrs | 2.5hrs |
-| Used Postman to make url batch calls| H | 1 hrs| 2.5hrs | 2.5hrs |
-| Wasted time generating geoJSON files and reading MapBox documentation| H | 7hrs| 2.5hrs | 2.5hrs |
-| Rendering specific neighborhood with js| H | 3hrs| 2.5hrs | 2.5hrs |
-| Notification if no restaurants are in the area| H | 2hrs| 2.5hrs | 2.5hrs |
-| Zooming to specific selected neighborhood| H | 2 hrs| 2.5hrs | 2.5hrs |
+| General HTML CSS | L | 2hrs| 2hrs | 2hrs |
+| Loading Dropdown Menu with Neighborhoods| H | 1.5hrs| 1.5hrs | 1.5hrs |
+| Getting all address data from Baltimore's Open Data API| H | 4hrs| 4hrs | 4hrs |
+| Learning to use ~~Geocodio~~ MapQuest Developer's Geocoding API| H | 4hrs| 4hrs | 4hrs |
+| Generated url's to call on MapQuest's Developer's Geocoding API| H | 4hrs| 4hrs | 4hrs |
+| Used Postman to make url batch calls| H | 1 hrs| 1 hrs | 1 hrs |
+| Wasted time generating geoJSON files and reading MapBox documentation| H | 7hrs| 7hrs | 7hrs |
+| Rendering specific neighborhood with js| H | 3hrs| 3hrs | 3hrs |
+| Notification if no restaurants are in the area| H | 2.5hrs| 2.5hrs | 2.5hrs |
+| Zooming to specific selected neighborhood| H | 2hrs| 2hrs | 2hrs |
 | Labeling restaurants with Mapbox functionality| H | 2.5 hrs| 2.5hrs | 2.5hrs |
-| Final styling| H | 2.5 hrs| 2.5hrs | 2.5hrs |
-| Total | H | 9hrs| 5hrs | 5hrs |
+| Final styling| H | 3hrs| 3hrs | 3hrs |
+| Total | H | 36.5hrs| 36.5hrs | 36.5hrs |
 
 ## Code Snippet
 
