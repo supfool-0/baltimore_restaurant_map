@@ -2,7 +2,7 @@
 
 ## Baltimore Restaurant Map
 
-This project maps all restaurant locations in Baltimore and allows the user the capability to search restaurants by neighborhood. Restaurant address locations are obtained from the [Baltimore Open Data API](https://data.baltimorecity.gov/Culture-Arts/Restaurants/k5ry-ef3g). These addresses are geocoded with [MapQuest Developer's Geocoding API](https://developer.mapquest.com/documentation/geocoding-api/)to latitude and longitude coordinates from their physical address, then mapped out using [Mapbox](https://www.mapbox.com/). This dataset has roughy 1,000 data points.
+This project maps all restaurant locations in Baltimore and allows the user the capability to search restaurants by neighborhood. Restaurant address locations are obtained from the [Baltimore Open Data API](https://data.baltimorecity.gov/Culture-Arts/Restaurants/k5ry-ef3g). These addresses are geocoded with [MapQuest Developer's Geocoding API](https://developer.mapquest.com/documentation/geocoding-api/) to latitude and longitude coordinates from their physical address, then mapped out using [Mapbox](https://www.mapbox.com/). This dataset has roughy 1,000 data points.
 
 ## API and Data Sample
 
@@ -56,9 +56,16 @@ human_address: "{"address": "1801 NORTH AVE", "city": "Baltimore", "state": "MD"
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | General HTML CSS | L | 2hrs| 3.5hrs | 3.5hrs |
-| Loading Dropdown Menu| H | 1.5hrs| 2.5hrs | 2.5hrs |
-| Learning to use MapBox and Geocodio| H | 3hrs| 2.5hrs | 2.5hrs |
-| Rendering specific Neighborhood| H | 3hrs| 2.5hrs | 2.5hrs |
+| Loading Dropdown Menu with Neighborhoods| H | 1.5hrs| 2.5hrs | 2.5hrs |
+| Getting all address data from Baltimore's Open Data API| H | 3hrs| 2.5hrs | 2.5hrs |
+| Learning to use ~~Geocodio~~ MapQuest Developer's Geocoding API| H | 4hrs| 2.5hrs | 2.5hrs |
+| Generated url's to call on MapQuest's Developer's Geocoding API| H | 4hrs| 2.5hrs | 2.5hrs |
+| Wasted time generating geoJSON files and reading MapBox documentation| H | 6hrs| 2.5hrs | 2.5hrs |
+| Rendering specific neighborhood with js| H | 3hrs| 2.5hrs | 2.5hrs |
+| Notification if no restaurants are in the area| H | 2hrs| 2.5hrs | 2.5hrs |
+| Zooming to specific selected neighborhood| H | 2 hrs| 2.5hrs | 2.5hrs |
+| Labeling restaurants with Mapbox functionality| H | 2.5 hrs| 2.5hrs | 2.5hrs |
+| Final styling| H | 2.5 hrs| 2.5hrs | 2.5hrs |
 | Total | H | 9hrs| 5hrs | 5hrs |
 
 ## Code Snippet
